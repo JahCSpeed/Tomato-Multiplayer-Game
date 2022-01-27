@@ -1,0 +1,17 @@
+-============== Multiplayer Game ==============-
+
+Create a server that listens for connections on a particular port, invoked as:
+./server <port>
+
+Then the client can connect to the server via:
+./client <server name/IP> <port>
+
+
+If you want to build on a local Linux install, you’ll need the required SDL libraries:
+
+*sudo apt install libsdl2-dev libsdl2-image-dev libsdl2-ttf-dev*
+
+Then, build with make -f Makefile.local.
+
+Alternatively, the Makefile has a rule that will run the client with LD_LIBRARY_PATH set, so you can
+run the client with *make runclient*.
